@@ -36,10 +36,10 @@ void QtHelloWorld::showHelloWorld()
     QString info;
     if(isClear())
     {
-            info = QString();
+            info = "";
     }else
     {
-            info = QString("Hellow World");
+            info = "Hellow World";
     }
     setClear( !isClear()) ;
     setLblOkShow( info );
