@@ -3,8 +3,6 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_qthelloworld.h"
-//#include <string>
-//#include <iostream>
 
 
 class QtHelloWorld : public QMainWindow
@@ -18,7 +16,7 @@ public:
 	bool isClear();
 	
 	public slots:
-		void on_btnOk_Clicked();
+		void on_btnOk_clicked();
 
 protected:
 	void showHelloWorld();

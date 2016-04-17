@@ -1,7 +1,5 @@
 #include "stdafx.h"
 #include "qthelloworld.h"
-//#include <string>
-//#include <iostream>
 
 QtHelloWorld::QtHelloWorld(QWidget *parent)
 	: QMainWindow(parent)
@@ -17,8 +15,7 @@ QtHelloWorld::~QtHelloWorld()
 
 void QtHelloWorld::setLblOkShow(QString& str)
 {
-    //const char* title = (char*)str;
-    ui.lblOkShow->setText(QApplication::translate("QtHelloWorldClass", "HW", 0));
+    ui.lblOkShow->setText(str);
 }
 
 bool QtHelloWorld::isClear()
@@ -26,7 +23,7 @@ bool QtHelloWorld::isClear()
     return m_isClear;
 }
 
-void QtHelloWorld::on_btnOk_Clicked()
+void QtHelloWorld::on_btnOk_clicked()
 {
     showHelloWorld();
 }
@@ -34,13 +31,9 @@ void QtHelloWorld::on_btnOk_Clicked()
 void QtHelloWorld::showHelloWorld()
 {
     QString info;
-    if(isClear())
-    {
-            info = "";
-    }else
-    {
-            info = "Hellow World";
-    }
+    info = isClear() == true?
+            "":
+            "Hellow World";
     setClear( !isClear()) ;
     setLblOkShow( info );
 }
