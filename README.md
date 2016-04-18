@@ -8,7 +8,7 @@ Wellcome to learn VS with Qt
     
 - Package Release need the files flowing to deployment:
     + Folder release
-    |    + Qt5Core.dll
-    |    + Qt5Gui.dll
-    |    + Qt5Widgets.dll
-    |    + QtHelloWorld.exe
+        + Qt5Core.dll
+        + Qt5Gui.dll
+        + Qt5Widgets.dll
+        + QtHelloWorld.exe
